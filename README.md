@@ -1,3 +1,5 @@
+[ ** Warning: Repo under construction. Do not use ;) ** ]
+
 # Fourier for Symbolic Music
 
 This repo provides teaching resources that run alongside
