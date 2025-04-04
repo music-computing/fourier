@@ -95,13 +95,19 @@ def multiply(
     return [x * scale_factor for x in input_list]  # TODO np would be better here.
 
 
+def is_indicator_vector(indicator_vector: list | tuple) -> bool:
+    """Check that a list or tuple is an indicator vector, featuring only 0s and 1s."""
+    if all(x in (0, 1) for x in indicator_vector):
+        return True
+
+
 def complement(indicator_vector: list) -> list:
     """
     Provide the complement of an indicator vector.
     >>> complement([1, 0, 1, 0])
     [0, 1, 0, 1]
     """
-    if not all(x in (0, 1) for x in indicator_vector):
+    if not is_indicator_vector(indicator_vector):
         raise ValueError("This is to be called only on binary lists (indicator vectors).")
     return [1 - x for x in indicator_vector]
 
@@ -170,12 +176,7 @@ def interval_to_interval_class(interval: int) -> int:
     >>> interval_to_interval_class(7)
     5
     """
-    interval = abs(interval) % 12  # everything into the range 0–12.
-    if interval <= 6:
-        return interval
-    else:
-        return 12 - interval
-    # TODO alternative: `return (abs(interval) % 12) if (abs(interval) % 12) <= 6 else (12 - (abs(interval) % 12))`
+    return (abs(interval) % 12) if (abs(interval) % 12) <= 6 else (12 - (abs(interval) % 12))
 
 
 def set_to_vector(
@@ -210,8 +211,8 @@ def set_to_vector(
     for item in input_set:
         counts[item] += 1
 
-    for index in range(min_index):
-        counts.pop(index)
+    if min_index > 0:
+        counts = counts[min_index:]
 
     return tuple(counts)
 
@@ -224,9 +225,13 @@ def vector_to_set(
     to a corresponding "set" (unordered list of integers).
     See the paper for full definitions.
 
-    Converts any list of integers into a count by index.
-    Similar to collections.Counter, but returning an ordered list.
+   Args:
+       vector: The input vector.
 
+   Returns:
+       A tuple representing the set.
+
+    Examples:
     >>> test_vector = (0, 3, 2, 1, 0, 0, 0)
     >>> resulting_set = vector_to_set(test_vector)
     >>> resulting_set
@@ -240,12 +245,7 @@ def vector_to_set(
     True
 
     """
-    values = []
-    for i in range(len(vector)):
-        for c in range(vector[i]):
-            values.append(i)
-
-    return tuple(values)
+    return tuple(i for i in range(len(vector)) for _ in range(vector[i]))
 
 
 # ------------------------------------------------------------------------
