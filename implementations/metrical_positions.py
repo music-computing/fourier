@@ -119,7 +119,7 @@ class MetricalData:
 
     def get_bins(self):
         """
-        Create equal sized bins for any piece.
+        Create equal-sized bins for any piece.
         Take the min/max values as the start/end of the bars at the extreme of the piece,
         to make sure every event is counted (with at most a small buffer).
         """
@@ -142,9 +142,9 @@ class MetricalData:
 
         :param measure_not_whole: If True, aggregate data into one abstract measure.
         :param grid_lines: The number of vertical lines, e.g., to highlight macro-beats.
-        :param x_label: Optionally specify an annotation for the x-axis.
+        :param x_label: Optionally, specify an annotation for the x-axis.
         :param write_not_show: Chose between saving and showing.
-        :param write_path: If writing/saving, chose a file location and name.
+        :param write_path: If writing/saving, choose a file location and name.
         :return: None (plot)
         """
         if measure_not_whole:

@@ -11,8 +11,6 @@ from pathlib import Path
 
 __author__ = "Anonymous for blind submission"
 
-from implementations.examples.profiles import scales
-
 THIS_DIR = Path(__file__).parent
 
 
@@ -34,7 +32,7 @@ def compute_and_plot(
     :param frequency_arrays: A list of 'signal' arrays which can be as simple as binary profiles.
     :param hide_symmetry: Return half the values from index 1 to N/2 (removing the symmetry).
     :param write_not_show: Chose between saving and showing.
-    :param write_path: If writing/saving, chose a file location and name.
+    :param write_path: If writing/saving, choose a file location and name.
     :param labels: A list of labels for each data set.
     :param colors: A list of colors for each data set.
     :return: None (plot)
