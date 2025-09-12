@@ -72,9 +72,20 @@ def compute_and_plot(
     plt.ylabel('FFT Amplitude $|X(freq)|$', fontsize=axis_label_size)
     plt.xlabel('Coefficient', fontsize=axis_label_size)
 
-    plt.xticks(rotation=45)
+    plt.xticks()
+    default_ticks = plt.xticks()
+    if len(default_ticks[0]) > 1:
+        spacing = default_ticks[0][1] - default_ticks[0][0]
+        if spacing < 1:
+            x_min, x_max = plt.xlim()
+            start = int(np.floor(x_min))
+            end = int(np.ceil(x_max))
+            integer_ticks = [i for i in range(start, end + 1) if i >= x_min and i <= x_max]
+            plt.xticks(integer_ticks)
     plt.grid()
-    plt.legend()
+
+    if labels:
+        plt.legend()
 
     if write_not_show:
         plt.savefig(write_path)
@@ -83,7 +94,8 @@ def compute_and_plot(
 
 
 def run_one(
-        profile: list | None = None
+        profile: list | None = None,
+        hide_symmetry: bool = True
 ) -> None:
     """
     Prepared and plot FT for any list.
@@ -98,7 +110,7 @@ def run_one(
     compute_and_plot(
         time_array,
         [frequency_array],
-        hide_symmetry=False,
+        hide_symmetry=hide_symmetry,
         labels=["major scale"],
         write_path= THIS_DIR / "plots" / "dft_example.pdf"
     )
