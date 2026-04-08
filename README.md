@@ -1,5 +1,3 @@
-[ ** Warning: Repo under construction. Do not use ;) ** ]
-
 # Fourier for Symbolic Music
 
 This repo provides teaching resources that run alongside
@@ -23,18 +21,20 @@ The implementation tasks vary in difficulty as indicated on the table below,
 ranked from 1 to 5 as least to most difficult.
 
 
-## Contents
+## Notebooks in Order
 
-
-| Topic             | Task in words                        | Local Notebook                      | Colab                                                                                                                                                                            | Level | Notes                                                                  |
-|-------------------|--------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|------------------------------------------------------------------------|
-| Matrix Basics     | [task](./tasks/matrix_basics.md)     | [Notebook](matrix_basics.ipynb)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/matrix_basics.ipynb)     | 2     | Mathematics, but quite basic/accessible                                |
-| Periodic          | [task](./tasks/periodic.md)          | [Notebook](periodic.ipynb)          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/periodic.ipynb)          | 2     | Demonstrating broad equivalence of audio and images wrt periodicity    |
-| Composite Signal  | [task](./tasks/composite_signal.md)  | [Notebook](composite_signal.ipynb)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/composite_signal.ipynb)  | 1     | Demo'd on audio, though shared relevance                               |
-| Fourier Matrix    | [task](./tasks/fourier_matrix.md)    | [Notebook](fourier_matrix.ipynb)    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/fourier_matrix.ipynb)    | 5     | Mathematics from scratch.                                              |
-| Fourier Roundtrip | [task](./tasks/fourier_roundtrip.md) | [Notebook](fourier_roundtrip.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/fourier_roundtrip.ipynb) | 3     | Only standard library imports, no local implementations                |
-| Symmetry          | [task](./tasks/symmetry.md)          | [Notebook](symmetry.ipynb)          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/symmetry.ipynb)          | 2     | PLot the full FT for a signal and then the equivalent without symmetry |
-| Invariance        | [task](./tasks/invariance.md)        | [Notebook](invariance.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/invariance.ipynb)        | 2     | Explore how various input sets can have the same FT.                   |
+| Topic             | Local (view)                             | Colab                                                                                                                                                                            | Level |
+|-------------------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Matrix Basics     | [View notebook](matrix_basics.ipynb)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/matrix_basics.ipynb)     | 2     |
+| Composite Signal  | [View notebook](composite_signal.ipynb)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/composite_signal.ipynb)  | 1     |
+| Trigonometric     | [View notebook](trigonometric.ipynb)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/trigonometric.ipynb)     | 3     |
+| Fourier matrix    | [View notebook](fourier_matrix.ipynb)    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/fourier_matrix.ipynb)    | 5     |
+| Fourier Roundtrip | [View notebook](fourier_roundtrip.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/fourier_roundtrip.ipynb) | 3     |
+| Polar             | [View notebook](polar.ipynb)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/polar.ipynb)             | 3     |
+| Symmetry          | [View notebook](symmetry.ipynb)          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/symmetry.ipynb)          | 2     |
+| Invariance        | [View notebook](invariance.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/invariance.ipynb)        | 2     |
+| Power             | [View notebook](power.ipynb)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/power.ipynb)             | 1     |
+| Convolution       | [View notebook](convolution.ipynb)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/convolution.ipynb)       | 3     |
 
 
 ## Contributing
@@ -43,4 +43,4 @@ Feedback, requests, suggestions are all welcome.
 
 Thanks and happy Fourier-ing ;).
 
-[Anon], 2025
+[Anon], 2025-
