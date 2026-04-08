@@ -1,13 +1,14 @@
-name: DFT
+name: fourier
 
 channels:
   - conda-forge
   - defaults
 
 dependencies:
-  - python>=3.9
+  - amads
+  - matplotlib
   - numpy
   - pip
+  - python>=3.10
   - scipy
-  - matplotlib
 
