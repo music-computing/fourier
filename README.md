@@ -33,8 +33,11 @@ ranked from 1 to 5 as least to most difficult.
 | Polar             | [View notebook](polar.ipynb)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/polar.ipynb)             | 3     |
 | Symmetry          | [View notebook](symmetry.ipynb)          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/symmetry.ipynb)          | 2     |
 | Invariance        | [View notebook](invariance.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/invariance.ipynb)        | 2     |
+| Prototypes        | [View notebook](prototypes.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/prototypes.ipynb)        | 1     |
 | Power             | [View notebook](power.ipynb)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/power.ipynb)             | 1     |
 | Convolution       | [View notebook](convolution.ipynb)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/convolution.ipynb)       | 3     |
+| Ragtime           | [View notebook](ragtime.ipynb)           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/ragtime.ipynb)           | 3     |
+| Gamelan           | [View notebook](gamelan.ipynb)           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/music-computing/fourier/blob/main/gamelan.ipynb)           | 3     |
 
 
 ## Contributing
